@@ -30,4 +30,18 @@ pipeline {
             }
         }
     }
+
+    post {
+        always {
+            echo "Proses sudah selesai dilakukan"
+        }
+
+        success {
+            echo "Semua proses berhasil dilakukan"
+        }
+
+        failure {
+            echo "Proses yang dilakukan ada yang gagal"
+        }
+    }
 }
