@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        label 'agent-jenkins-01x'
+        label 'agent-jenkins-01'
     }
 
     stages {
