@@ -43,5 +43,9 @@ pipeline {
         failure {
             echo "Proses yang dilakukan ada yang gagal"
         }
+
+        aborted {
+            echo "Proses yang dilakukan dibatalkan"
+        }
     }
 }
