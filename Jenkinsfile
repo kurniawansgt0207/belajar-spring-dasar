@@ -52,10 +52,10 @@ pipeline {
                     int hasil = nil1 - nil2;
                     echo "Hasil Proses ke-3: ${hasil}"
 
-                    if(${hasil} > 3){
-                        def label = "AAAA";
+                    if(hasil > 3){
+                        String label = "AAAA";
                     } else {
-                        def label = "BBBB";
+                        String label = "BBBB";
                     }
 
                     echo "Label: ${label}"
