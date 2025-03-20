@@ -37,8 +37,8 @@ pipeline {
                     int nil1 = 10;
                     int nil2 = 6;
                     int hasil = nil1 - nil2;
-                }
-                echo "Hasil Proses ke-3: ${hasil}"
+                    echo "Hasil Proses ke-3: ${hasil}"
+                }                
                 echo 'Proses ke-3 selesai'
             }
         }
