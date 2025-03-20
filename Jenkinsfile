@@ -59,9 +59,11 @@ pipeline {
                         keterangan = "BBBB";
                     }
 
-                    echo "Label: ${keterangan}"
+                    
                 }                
-                echo 'Proses ke-3 selesai'
+
+                echo "Label: ${keterangan}"
+                echo 'Proses ke-4 selesai'
             }
         }
     }
