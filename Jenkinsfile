@@ -43,6 +43,7 @@ pipeline {
             }
         }
 
+        def keterangan = null;
         stage('Keempat') {
             steps {
                 echo 'Proses ke-4 mulai'
@@ -53,12 +54,12 @@ pipeline {
                     echo "Hasil Proses ke-3: ${hasil}"
 
                     if(hasil > 3){
-                        String label = "AAAA";
+                        keterangan = "AAAA";
                     } else {
-                        String label = "BBBB";
+                        keterangan = "BBBB";
                     }
 
-                    echo "Label: ${label}"
+                    echo "Label: ${keterangan}"
                 }                
                 echo 'Proses ke-3 selesai'
             }
