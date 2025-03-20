@@ -29,6 +29,19 @@ pipeline {
                 echo 'Proses ke-2 selesai'
             }
         }
+
+        stage('Ketiga') {
+            steps {
+                echo 'Proses ke-3 mulai'
+                script {
+                    int nil1 = 10
+                    int nil2 = 6
+                    int hasil = nil1 - nil2
+                }
+                echo "Hasil Proses ke-3: ${hasil}"
+                echo 'Proses ke-3 selesai'
+            }
+        }
     }
 
     post {
