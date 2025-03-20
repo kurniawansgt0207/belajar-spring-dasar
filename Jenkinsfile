@@ -42,12 +42,12 @@ pipeline {
                 echo 'Proses ke-3 selesai'
             }
         }
-
-        def keterangan = null;
+        
         stage('Keempat') {
             steps {
                 echo 'Proses ke-4 mulai'
                 script {
+                    def keterangan = null;
                     int nil1 = 15;
                     int nil2 = 6;
                     int hasil = nil1 - nil2;
